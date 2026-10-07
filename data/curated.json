@@ -1,0 +1,16 @@
+[
+  {
+    "example": true,
+    "title": "Example: Newcomers' Stammtisch",
+    "date": "2026-10-15",
+    "time": "19:00",
+    "endTime": "22:00",
+    "venue": "Apfelweinwirtschaft Example",
+    "address": "Musterstraße 1, 60594 Frankfurt",
+    "category": "community",
+    "url": "https://example.com/stammtisch",
+    "description": "Entries with \"example\": true are ignored. Copy this block, delete the example line, and fill in a real event.",
+    "price": "Free",
+    "tags": ["english-friendly", "newcomers"]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "nearwo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nearwo: Frankfurt events for newcomers. Data pipeline + static web app.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fetch": "node scripts/fetch-events.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  }
+}

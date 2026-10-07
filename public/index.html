@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nearwo · What's on in Frankfurt</title>
+  <meta name="description" content="Events in Frankfurt for newcomers and everyone else. No sign-up.">
+  <meta name="theme-color" content="#13294B">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2313294B'/><circle cx='16' cy='14' r='5' fill='none' stroke='%23F08A24' stroke-width='3'/><path d='M16 19v7' stroke='%23F08A24' stroke-width='3' stroke-linecap='round'/></svg>">
+  <link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand">
+      <span class="wordmark">Nearwo</span>
+      <span class="city">Frankfurt am Main</span>
+    </div>
+    <p class="updated" id="updated"></p>
+  </header>
+
+  <section class="controls" aria-label="Filter events">
+    <div class="row">
+      <label class="search">
+        <span class="visually-hidden">Search events</span>
+        <input id="q" type="search" placeholder="Search events, venues, districts" autocomplete="off">
+      </label>
+      <button id="near" class="pill-btn" type="button" aria-pressed="false">Show distance</button>
+      <button id="savedOnly" class="pill-btn" type="button" aria-pressed="false">Saved <span id="savedCount"></span></button>
+    </div>
+    <div class="row when" role="radiogroup" aria-label="When">
+      <button role="radio" data-when="today" aria-checked="false">Today</button>
+      <button role="radio" data-when="weekend" aria-checked="false">This weekend</button>
+      <button role="radio" data-when="week" aria-checked="true">Next 7 days</button>
+      <button role="radio" data-when="all" aria-checked="false">Everything</button>
+    </div>
+    <div class="row cats" id="cats" aria-label="Categories"></div>
+  </section>
+
+  <main id="list" aria-live="polite"></main>
+
+  <dialog id="detail" aria-labelledby="d-title">
+    <form method="dialog"><button class="close" aria-label="Close">×</button></form>
+    <div id="d-body"></div>
+  </dialog>
+
+  <footer class="foot">
+    <p>Nearwo collects public event listings. Check details with the organiser before you go.
+    Your saved events and location stay on this device.</p>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

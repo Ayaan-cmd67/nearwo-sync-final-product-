@@ -1,0 +1,25 @@
+{
+  "region": {
+    "name": "Frankfurt am Main",
+    "lat": 50.1109,
+    "lon": 8.6821,
+    "radiusKm": 25,
+    "timeZone": "Europe/Berlin"
+  },
+  "windowDays": 60,
+  "ticketmaster": {
+    "enabled": true,
+    "maxPages": 5
+  },
+  "icsFeeds": [
+    {
+      "enabled": false,
+      "name": "Example venue (replace me)",
+      "url": "https://example-venue.de/events/?ical=1",
+      "defaultCategory": "community",
+      "venue": "Example Venue",
+      "address": "Musterstraße 1, 60311 Frankfurt",
+      "tags": ["english-friendly"]
+    }
+  ]
+}
